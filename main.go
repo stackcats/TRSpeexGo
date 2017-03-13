@@ -50,5 +50,6 @@ func main() {
 	app.Adapt(httprouter.New())
 	app.Post("spx-to-wav", iris.LimitRequestBodySize(10<<20), handler.SpxToWav)
 	app.Post("spx-to-mp3", iris.LimitRequestBodySize(10<<20), handler.SpxToMp3)
+	app.Post("spx-to-qn", iris.LimitRequestBodySize(10<<20), handler.SpxToQN)
 	app.Listen(":8888")
 }

@@ -3,4 +3,3 @@ dist:
 	go build -o main && \
 	mkdir bin && \
         mv main bin/
-	
