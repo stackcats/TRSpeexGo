@@ -1,4 +1,3 @@
 bin/
 uploads/*
 .DS_Store
-util/conf.go

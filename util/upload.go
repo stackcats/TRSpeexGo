@@ -1,9 +1,16 @@
 package util
 
 import (
+	"os"
 	"qiniupkg.com/api.v7/conf"
 	"qiniupkg.com/api.v7/kodo"
 	"qiniupkg.com/api.v7/kodocli"
+)
+
+var (
+	bucket    = os.Getenv("BUCKET")
+	accesskey = os.Getenv("ACCESS_KEY")
+	secretkey = os.Getenv("SECRET_KEY")
 )
 
 // PutRet ...
