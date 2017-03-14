@@ -1,0 +1,220 @@
+{
+	"ImportPath": "github.com/stackcats/TRSpeexGo",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v79",
+	"Packages": [
+		"github.com/stackcats/TRSpeexGo",
+		"github.com/stackcats/TRSpeexGo/handler",
+		"github.com/stackcats/TRSpeexGo/util"
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/geekypanda/httpcache",
+			"Comment": "v0.0.1-11-g76ba6c6",
+			"Rev": "76ba6c68462ae362cda7564c44492b95322b363a"
+		},
+		{
+			"ImportPath": "github.com/geekypanda/httpcache/internal",
+			"Comment": "v0.0.1-11-g76ba6c6",
+			"Rev": "76ba6c68462ae362cda7564c44492b95322b363a"
+		},
+		{
+			"ImportPath": "github.com/geekypanda/httpcache/internal/nethttp",
+			"Comment": "v0.0.1-11-g76ba6c6",
+			"Rev": "76ba6c68462ae362cda7564c44492b95322b363a"
+		},
+		{
+			"ImportPath": "github.com/geekypanda/httpcache/internal/nethttp/rule",
+			"Comment": "v0.0.1-11-g76ba6c6",
+			"Rev": "76ba6c68462ae362cda7564c44492b95322b363a"
+		},
+		{
+			"ImportPath": "github.com/geekypanda/httpcache/internal/server",
+			"Comment": "v0.0.1-11-g76ba6c6",
+			"Rev": "76ba6c68462ae362cda7564c44492b95322b363a"
+		},
+		{
+			"ImportPath": "github.com/google/go-github/github",
+			"Rev": "2ec691a35b10b8c1471955a96d0f182a572e1cad"
+		},
+		{
+			"ImportPath": "github.com/google/go-querystring/query",
+			"Rev": "53e6ce116135b80d037921a7fdd5138cf32d7a8a"
+		},
+		{
+			"ImportPath": "github.com/hashicorp/go-version",
+			"Rev": "03c5bf6be031b6dd45afec16b1cf94fc8938bc77"
+		},
+		{
+			"ImportPath": "github.com/imdario/mergo",
+			"Comment": "0.2.2-6-g50d4dbd",
+			"Rev": "50d4dbd4eb0e84778abe37cefef140271d96fade"
+		},
+		{
+			"ImportPath": "github.com/iris-contrib/formBinder",
+			"Rev": "81b6a071e35797b83562caf4b3cad24dc01912dc"
+		},
+		{
+			"ImportPath": "github.com/kataras/go-errors",
+			"Rev": "0f977b82cc78d5d31bb75fb6f903ad9e852c8bbd"
+		},
+		{
+			"ImportPath": "github.com/kataras/go-fs",
+			"Rev": "a59d7ab2618aa7f692f79dc4c5ba7a5f8ebfa136"
+		},
+		{
+			"ImportPath": "github.com/kataras/go-serializer",
+			"Rev": "b61f2e8acda9377f80b5bf183a79ea32b9838f9d"
+		},
+		{
+			"ImportPath": "github.com/kataras/go-serializer/json",
+			"Rev": "b61f2e8acda9377f80b5bf183a79ea32b9838f9d"
+		},
+		{
+			"ImportPath": "github.com/kataras/go-serializer/jsonp",
+			"Rev": "b61f2e8acda9377f80b5bf183a79ea32b9838f9d"
+		},
+		{
+			"ImportPath": "github.com/kataras/go-serializer/markdown",
+			"Rev": "b61f2e8acda9377f80b5bf183a79ea32b9838f9d"
+		},
+		{
+			"ImportPath": "github.com/kataras/go-serializer/xml",
+			"Rev": "b61f2e8acda9377f80b5bf183a79ea32b9838f9d"
+		},
+		{
+			"ImportPath": "github.com/kataras/go-template",
+			"Rev": "d8e3d78a3b73aaeaeb21fd639b6b13358f680dcf"
+		},
+		{
+			"ImportPath": "github.com/klauspost/compress/flate",
+			"Comment": "v1.2.1-1-g461e8fd",
+			"Rev": "461e8fd8397ae84a23f56e385801e4feda2048ce"
+		},
+		{
+			"ImportPath": "github.com/klauspost/compress/gzip",
+			"Comment": "v1.2.1-1-g461e8fd",
+			"Rev": "461e8fd8397ae84a23f56e385801e4feda2048ce"
+		},
+		{
+			"ImportPath": "github.com/klauspost/cpuid",
+			"Comment": "v1.0",
+			"Rev": "09cded8978dc9e80714c4d85b0322337b0a1e5e0"
+		},
+		{
+			"ImportPath": "github.com/klauspost/crc32",
+			"Comment": "v1.1",
+			"Rev": "cb6bfca970f6908083f26f39a79009d608efd5cd"
+		},
+		{
+			"ImportPath": "github.com/microcosm-cc/bluemonday",
+			"Rev": "e79763773ab6222ca1d5a7cbd9d62d83c1f77081"
+		},
+		{
+			"ImportPath": "github.com/russross/blackfriday",
+			"Comment": "v1.4-40-g5f33e7b",
+			"Rev": "5f33e7b7878355cd2b7e6b8eefc48a5472c69f70"
+		},
+		{
+			"ImportPath": "github.com/shurcooL/sanitized_anchor_name",
+			"Rev": "1dba4b3954bc059efc3991ec364f9f9a35f597d2"
+		},
+		{
+			"ImportPath": "github.com/valyala/bytebufferpool",
+			"Rev": "e746df99fe4a3986f4d4f79e13c1e0117ce9c2f7"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/acme",
+			"Rev": "453249f01cfeb54c3d549ddb75ff152ca243f9d8"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/acme/autocert",
+			"Rev": "453249f01cfeb54c3d549ddb75ff152ca243f9d8"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "6b27048ae5e6ad1ef927e72e437531493de612fe"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context/ctxhttp",
+			"Rev": "6b27048ae5e6ad1ef927e72e437531493de612fe"
+		},
+		{
+			"ImportPath": "golang.org/x/net/html",
+			"Rev": "6b27048ae5e6ad1ef927e72e437531493de612fe"
+		},
+		{
+			"ImportPath": "golang.org/x/net/html/atom",
+			"Rev": "6b27048ae5e6ad1ef927e72e437531493de612fe"
+		},
+		{
+			"ImportPath": "gopkg.in/kataras/iris.v6",
+			"Rev": "4656bc76777728d182938aaaa0382c000ed8d554"
+		},
+		{
+			"ImportPath": "gopkg.in/kataras/iris.v6/adaptors/httprouter",
+			"Rev": "4656bc76777728d182938aaaa0382c000ed8d554"
+		},
+		{
+			"ImportPath": "gopkg.in/yaml.v2",
+			"Rev": "a5b47d31c556af34a302ce5d659e6fea44d90de0"
+		},
+		{
+			"ImportPath": "qiniupkg.com/api.v7/api",
+			"Comment": "v7.0.5-34-g427efe3",
+			"Rev": "427efe34a76257db04b3b785e3b4d2fdb44cf9b9"
+		},
+		{
+			"ImportPath": "qiniupkg.com/api.v7/auth/qbox",
+			"Comment": "v7.0.5-34-g427efe3",
+			"Rev": "427efe34a76257db04b3b785e3b4d2fdb44cf9b9"
+		},
+		{
+			"ImportPath": "qiniupkg.com/api.v7/conf",
+			"Comment": "v7.0.5-34-g427efe3",
+			"Rev": "427efe34a76257db04b3b785e3b4d2fdb44cf9b9"
+		},
+		{
+			"ImportPath": "qiniupkg.com/api.v7/kodo",
+			"Comment": "v7.0.5-34-g427efe3",
+			"Rev": "427efe34a76257db04b3b785e3b4d2fdb44cf9b9"
+		},
+		{
+			"ImportPath": "qiniupkg.com/api.v7/kodocli",
+			"Comment": "v7.0.5-34-g427efe3",
+			"Rev": "427efe34a76257db04b3b785e3b4d2fdb44cf9b9"
+		},
+		{
+			"ImportPath": "qiniupkg.com/x/bytes.v7",
+			"Rev": "f512abcf45ab4e2ba0fd4784c57b53d495997d66"
+		},
+		{
+			"ImportPath": "qiniupkg.com/x/bytes.v7/seekable",
+			"Rev": "f512abcf45ab4e2ba0fd4784c57b53d495997d66"
+		},
+		{
+			"ImportPath": "qiniupkg.com/x/ctype.v7",
+			"Rev": "f512abcf45ab4e2ba0fd4784c57b53d495997d66"
+		},
+		{
+			"ImportPath": "qiniupkg.com/x/log.v7",
+			"Rev": "f512abcf45ab4e2ba0fd4784c57b53d495997d66"
+		},
+		{
+			"ImportPath": "qiniupkg.com/x/reqid.v7",
+			"Rev": "f512abcf45ab4e2ba0fd4784c57b53d495997d66"
+		},
+		{
+			"ImportPath": "qiniupkg.com/x/rpc.v7",
+			"Rev": "f512abcf45ab4e2ba0fd4784c57b53d495997d66"
+		},
+		{
+			"ImportPath": "qiniupkg.com/x/url.v7",
+			"Rev": "f512abcf45ab4e2ba0fd4784c57b53d495997d66"
+		},
+		{
+			"ImportPath": "qiniupkg.com/x/xlog.v7",
+			"Rev": "f512abcf45ab4e2ba0fd4784c57b53d495997d66"
+		}
+	]
+}
