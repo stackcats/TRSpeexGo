@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/stackcats/TRSpeexGo/util"
 	"gopkg.in/kataras/iris.v6"
-	// "os"
+	"os"
 	"os/exec"
 )
 
@@ -32,6 +32,8 @@ func SpxToQN(ctx *iris.Context) {
 
 	fpath := "./" + fname
 
+	defer os.Remove(fpath)
+
 	util.Convert(fpath)
 
 	wavfile := fpath + ".wav"
@@ -42,14 +44,14 @@ func SpxToQN(ctx *iris.Context) {
 		panic(err)
 	}
 
-	// os.Remove(wavfile)
+	os.Remove(wavfile)
 
 	ret, err := util.Upload(mp3file)
 	if err != nil {
 		panic(err)
 	}
 
-	// os.Remove(mp3file)
+	os.Remove(mp3file)
 
 	ctx.JSON(iris.StatusOK, iris.Map{
 		"code":   "1",
