@@ -1,11 +1,11 @@
 package handler
 
 import (
+	"errors"
 	"fmt"
 	"github.com/stackcats/TRSpeexGo/util"
 	"gopkg.in/kataras/iris.v6"
-	"io"
-	"os"
+	// "os"
 	"os/exec"
 )
 
@@ -20,25 +20,17 @@ func SpxToQN(ctx *iris.Context) {
 		}
 	}()
 
-	file, info, err := ctx.FormFile("uploadfile")
+	url := ctx.FormValue("url")
+	if url == "" {
+		panic(errors.New("url不存在"))
+	}
+
+	fname, err := util.Download(url)
 	if err != nil {
 		panic(err)
 	}
 
-	defer file.Close()
-
-	fname := info.Filename
-
-	fpath := "./uploads/" + fname
-	out, err := os.OpenFile(fpath, os.O_WRONLY|os.O_CREATE, 0666)
-
-	if err != nil {
-		panic(err)
-	}
-
-	defer out.Close()
-
-	io.Copy(out, file)
+	fpath := "./" + fname
 
 	util.Convert(fpath)
 
@@ -50,14 +42,14 @@ func SpxToQN(ctx *iris.Context) {
 		panic(err)
 	}
 
-	os.Remove(wavfile)
+	// os.Remove(wavfile)
 
 	ret, err := util.Upload(mp3file)
 	if err != nil {
 		panic(err)
 	}
 
-	os.Remove(mp3file)
+	// os.Remove(mp3file)
 
 	ctx.JSON(iris.StatusOK, iris.Map{
 		"code":   "1",
