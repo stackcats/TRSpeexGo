@@ -38,7 +38,9 @@ func Upload(fpath string) (*PutRet, error) {
 
 	ret := &PutRet{}
 
-	if err := uploader.PutFileWithoutKey(nil, ret, token, fpath, nil); err != nil {
+	key := string(Krand(32, KRANDALL)) + ".mp3"
+
+	if err := uploader.PutFile(nil, ret, token, key, fpath, nil); err != nil {
 		return nil, err
 	}
 

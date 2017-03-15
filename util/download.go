@@ -3,7 +3,6 @@ package util
 import (
 	//"encoding/json"
 	//"errors"
-	"fmt"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -42,7 +41,6 @@ func Download(url string) (string, error) {
 	// 	return "", errors.New(e.ErrMsg)
 	// }
 
-	fmt.Println("=========", resp.Body)
 	_, err = io.Copy(out, resp.Body)
 	if err != nil {
 		return "", err
