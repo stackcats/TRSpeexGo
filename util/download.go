@@ -1,8 +1,9 @@
 package util
 
 import (
-	"encoding/json"
-	"errors"
+	//"encoding/json"
+	//"errors"
+	"fmt"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -30,17 +31,18 @@ func Download(url string) (string, error) {
 
 	defer resp.Body.Close()
 
-	b, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		return "", err
-	}
+	// b, err := ioutil.ReadAll(resp.Body)
+	// if err != nil {
+	// 	return "", err
+	// }
 
-	e := &Err{}
-	err = json.Unmarshal(b, e)
-	if err == nil {
-		return "", errors.New(e.ErrMsg)
-	}
+	// e := &Err{}
+	// err = json.Unmarshal(b, e)
+	// if err == nil {
+	// 	return "", errors.New(e.ErrMsg)
+	// }
 
+	fmt.Println("=========", resp.Body)
 	_, err = io.Copy(out, resp.Body)
 	if err != nil {
 		return "", err
