@@ -9,6 +9,10 @@
 	],
 	"Deps": [
 		{
+			"ImportPath": "github.com/cryptix/wav",
+			"Rev": "844d399d120cec9249623f557ba69cf4d3bf8664"
+		},
+		{
 			"ImportPath": "github.com/geekypanda/httpcache",
 			"Comment": "v0.0.1-11-g76ba6c6",
 			"Rev": "76ba6c68462ae362cda7564c44492b95322b363a"
