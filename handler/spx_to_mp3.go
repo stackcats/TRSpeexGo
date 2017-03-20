@@ -46,7 +46,7 @@ func SpxToMp3(ctx *iris.Context) {
 
 	mp3file := fpath + ".mp3"
 
-	if err := exec.Command("lame", "--preset", "standard", wavfile, mp3file).Run(); err != nil {
+	if err := exec.Command("lame", "--preset", "standard", "-V", "3", wavfile, mp3file).Run(); err != nil {
 		panic(err)
 	}
 

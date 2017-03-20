@@ -2,6 +2,7 @@ package handler
 
 import (
 	"fmt"
+	"github.com/cryptix/wav"
 	"github.com/stackcats/TRSpeexGo/util"
 	"gopkg.in/kataras/iris.v6"
 	"io"
@@ -41,5 +42,14 @@ func SpxToWav(ctx *iris.Context) {
 
 	util.Convert(fpath)
 
+	wavPath := fpath + ".wav"
+
+	fileInfo, _ := os.Stat(wavPath)
+
+	wavFile, _ := os.Open(wavPath)
+	wavReader, err := wav.NewReader(wavFile, fileInfo.Size())
+
+	meta := wavReader.GetFile()
+	fmt.Println(meta.Duration)
 	ctx.SendFile(fpath+".wav", fname+".wav")
 }
